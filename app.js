@@ -27,7 +27,7 @@ app.get("/math/:operator/:num1/:num2", function(req, res) {
 	if(req.params.operator === "add") {
 		var sum = parseFloat(req.params.num1) + parseFloat(req.params.num2);
 		res.render("math", {number: sum})
-	} else if (req.params.operator === "subract") {
+	} else if (req.params.operator === "subtract") {
 		var difference = parseFloat(req.params.num1) - parseFloat(req.params.num2);
 		res.render("math", {number: difference});
 	} else if (req.params.operator === "multiply") {
